@@ -1,7 +1,7 @@
 package com.exception;
 
 /**
- * Purpose - Handle Exception if User Provides Invalid Mood
+ * Purpose - Null Mood Should Return Happy
  *
  */
 
