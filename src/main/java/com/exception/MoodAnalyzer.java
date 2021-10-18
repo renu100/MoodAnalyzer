@@ -1,7 +1,7 @@
 package com.exception;
 
 /**
- * Purpose - “I am in Happy Mood” message Should Return Happy
+ * Purpose - Handle Exception if User Provides Invalid Mood
  *
  */
 
@@ -17,10 +17,16 @@ public class MoodAnalyzer {
 		this.message = message;
 	}
 
+	// Handling Exception
 	public String analyseMood() {
-		if (this.message.contains("Sad"))
-			return "SAD";
-		else
+		try {
+
+			if (this.message.contains("Sad"))
+				return "SAD";
+			else
+				return "HAPPY";
+		} catch (NullPointerException e) {
 			return "HAPPY";
+		}
 	}
 }
